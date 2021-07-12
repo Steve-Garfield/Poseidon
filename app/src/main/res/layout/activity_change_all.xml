@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/p_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="신라면"
+            android:layout_marginTop="30dp"
+            android:textSize="32dp"
+            android:textStyle="bold"
+            android:layout_gravity="center"></TextView>
+
+        <ImageView
+            android:id="@+id/p_img"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/home_favorite1"></ImageView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <NumberPicker
+            android:id="@+id/picker1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="2dp" />
+
+        <NumberPicker
+            android:id="@+id/picker2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="2dp" />
+        <NumberPicker
+            android:id="@+id/picker3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="30dp">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/waterbtn"
+            android:text="출수"
+            android:textSize="17dp"
+            android:backgroundTint="#1566df"
+            >
+        </Button>
+
+        <ImageView
+            android:layout_marginLeft="30dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/heart"
+            android:src="@drawable/emptyheart"
+            android:background="@android:color/transparent"
+            android:adjustViewBounds="true">
+        </ImageView>
+    </LinearLayout>
+</LinearLayout>

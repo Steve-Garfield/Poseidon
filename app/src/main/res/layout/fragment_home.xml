@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageButton
+            android:id="@+id/btn_waterout"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            android:layout_weight="2"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:src="@drawable/home_btn_waterout"
+            android:background="@android:color/transparent">
+        </ImageButton>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/btn_minus"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                android:layout_marginLeft="30dp"
+                android:src="@drawable/home_btn_minus"></ImageButton>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:gravity="center">
+
+                <!-- Home에 있는 ml 숫자 -->
+                <EditText
+                    android:id="@+id/edittext_num_HOME"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="300"
+                    android:textSize="35sp"
+                    android:textStyle="bold"
+
+                    ></EditText>
+
+
+                <TextView
+                    android:id="@+id/textView_ML"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="ML"
+                    android:textSize="35sp"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="10dp"
+                    ></TextView>
+            </LinearLayout>
+
+            <ImageButton
+                android:id="@+id/btn_plus"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                android:layout_marginRight="30dp"
+                android:src="@drawable/home_btn_plus"></ImageButton>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:background="#CCCCCC"/>
+
+        <TextView
+            android:id="@+id/recent_list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="인기있는 제품"
+            android:textSize="15dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_gravity="right"
+            ></TextView>
+
+
+       <androidx.recyclerview.widget.RecyclerView
+           android:id="@+id/recyclerView"
+           android:layout_width="match_parent"
+           android:layout_height="250dp"
+           ></androidx.recyclerview.widget.RecyclerView>
+
+    </LinearLayout>
+</LinearLayout>

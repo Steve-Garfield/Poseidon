@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <FrameLayout
+        android:id="@+id/FrameLayout01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <ImageView
+            android:id="@+id/ImageView01"
+            android:layout_width="match_parent"
+            android:layout_height="310dp"
+            android:minWidth="200px"
+            android:minHeight="200px"
+            android:src="@drawable/login_background"></ImageView>
+
+        <ImageView
+            android:id="@+id/ImageView02"
+            android:layout_width="202dp"
+            android:layout_height="201dp"
+            android:layout_gravity="center"
+            android:minWidth="100px"
+            android:minHeight="100px"
+            android:src="@drawable/login_logo"></ImageView>
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="251dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/login_border"
+        android:layout_gravity="center_horizontal">
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_margin="10dp"
+            android:src="@drawable/login_email"
+            ></ImageView>
+
+        <EditText
+            android:id="@+id/et_email"
+            android:layout_width="188dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:background="#FFFFFF"
+            android:layout_marginLeft="5dp"
+            android:hint="이메일 "></EditText>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="251dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/login_border"
+        android:layout_marginTop="15dp"
+        android:layout_gravity="center_horizontal">
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_margin="10dp"
+            android:src="@drawable/login_pw"
+            ></ImageView>
+
+        <EditText
+            android:id="@+id/et_pw"
+            android:layout_width="188dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:background="#FFFFFF"
+            android:layout_marginLeft="5dp"
+            android:inputType="textPassword"
+            android:hint="비밀번호 "></EditText>
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_login"
+        android:layout_width="252dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="80dp"
+        android:background="@drawable/login_btn_background"
+        android:gravity="center"
+        android:paddingTop="14dp"
+        android:paddingBottom="14dp"
+        android:text="로그인"
+        android:textColor="#ffffff"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/tv_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="12dp"
+        android:text="비밀번호를 잊으셨나요?"
+        android:textColor="#1566e0"
+        android:textSize="10.5sp"></TextView>
+
+    <Button
+        android:id="@+id/btn_signup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="5dp"
+        android:backgroundTint="@color/white"
+        android:text="회원가입"
+        android:textColor="#1566e0"
+        android:textSize="15sp"></Button>
+
+</LinearLayout>
